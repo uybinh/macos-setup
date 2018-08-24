@@ -11,12 +11,6 @@ printf "Some customizations require root priveledges. Please enter your password
 sudo -v
 printf "Thanks.\n\n"
 
-
-
-if ask 'Disable startup sound?'; then
-	sudo nvram SystemAudioVolume=" "
-fi
-
 if ask 'Increase window resize speed for Cocoa applications?'; then
 	defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 fi
@@ -25,14 +19,14 @@ if ask 'Do not restore windows after ⌘ + Q?'; then
 	defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 fi
 
-if ask 'Disable menu bar transparency?'; then
-	defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
-fi
+# if ask 'Disable menu bar transparency?'; then
+# 	defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+# fi
 
-if ask 'Top right screen corner → Activate screen saver?'; then
-	defaults write com.apple.dock wvous-tr-corner -int 5
-	defaults write com.apple.dock wvous-tr-modifier -int 0
-fi
+# if ask 'Top right screen corner → Activate screen saver?'; then
+# 	defaults write com.apple.dock wvous-tr-corner -int 5
+# 	defaults write com.apple.dock wvous-tr-modifier -int 0
+# fi
 
 if ask 'Expand save panel by default?'; then
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -84,9 +78,9 @@ if ask 'Disable the "Are you sure you want to open this application?" check?'; t
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
 fi
 
-if ask 'Enable HiDPI (Retina) display modes?'; then
-	sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
-fi
+# if ask 'Enable HiDPI (Retina) display modes?'; then
+# 	sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+# fi
 
 if ask 'Show ~/Library in Finder?'; then
 	chflags nohidden ~/Library

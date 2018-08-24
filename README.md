@@ -1,11 +1,8 @@
-# osx-setup – Jumpstart OS X.
+# macOS-setup
 
-- [shrinks the default OS X installation](lib/shrink.sh)
+- [shrinks the default macOS installation](lib/shrink.sh)
 - installs [developer stuff](lib/install.sh) like [Homebrew](http://brew.sh/), [node.js](https://nodejs.org/) and [the Fish Shell](http://fishshell.com/)
 - sets [opinionated developer-friends defaults](lib/defaults.sh)
-- installs [my dotfiles](https://github.com/derhuerst/dotfiles)
-
-
 
 ## Install
 
@@ -19,4 +16,4 @@ curl -sSL https://raw.githubusercontent.com/derhuerst/osx-setup/master/install |
 
 ## Contributing
 
-If you **have a question**, **found a bug** or want to **propose a feature**, have a look at [the issues page](https://github.com/derhuerst/osx-setup/issues).
+Inspired by [osx-setup – Jumpstart OS X](https://github.com/derhuerst/osx-setup/issues).
